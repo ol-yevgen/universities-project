@@ -1,6 +1,5 @@
 import { useState, useCallback } from "react";
 
-
 //Hooks to send requests to the server by GET method
 export const useHttp = () => {
     const [loading, setLoading] = useState(false);
