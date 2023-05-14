@@ -1,4 +1,4 @@
-export const Form = () => {
+export const Form = ({ onReset }) => {
    return(
        <form action="" className="form">
            <label htmlFor="name" className="form__title">Choose the country in which you will study</label>

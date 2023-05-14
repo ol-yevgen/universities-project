@@ -7,11 +7,19 @@ const MainPage = () => {
     const [universityList, setUniversitylist] = useState([]);
     const [offset, setOffset] = useState(10);
     const [universityEnded, setUniversityListEnded] = useState(false);
-    
+
+    //State reset method
+    const reset = useCallback(() => {
+        setCountry(country => '')
+        setUniversitylist(universityList => [])
+        setOffset(offset => 10)
+        setUniversityListEnded(universityEnded => false)
+    }, [])
+
     return (
         <main>
             <Form
-               
+                onReset={reset}
             />
             <button
                 type="submit"
