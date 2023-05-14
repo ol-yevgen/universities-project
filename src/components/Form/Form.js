@@ -1,4 +1,4 @@
-export const Form = ({ onReset, country, setCountry }) => {
+export const Form = ({ onSubmit, onReset, country, setCountry }) => {
    return(
        <form action="" className="form">
            <label htmlFor="name" className="form__title">Choose the country in which you will study</label>
@@ -15,11 +15,17 @@ export const Form = ({ onReset, country, setCountry }) => {
                <button
                    type="submit"
                    className="btn form__submit"
-               >Submit</button>
+                   onClick={onSubmit}
+               >
+                   Submit
+               </button>
                <button
                    type="reset"
                    className="btn form__reset"
-               >Reset</button>
+                   onClick={onReset}
+               >
+                   Reset
+               </button>
            </div>
        </form>
 
