@@ -1,10 +1,12 @@
-export const Form = ({ onReset }) => {
+export const Form = ({ onReset, country, setCountry }) => {
    return(
        <form action="" className="form">
            <label htmlFor="name" className="form__title">Choose the country in which you will study</label>
            <input
                type="text"
                name="name"
+               value={country}
+               onChange={setCountry}
                placeholder="Ukraine"
                className="form__input"
                autocomplite="off"

@@ -16,10 +16,18 @@ const MainPage = () => {
         setUniversityListEnded(universityEnded => false)
     }, [])
 
+    //Receive input value method
+    const setCountryValue = (e) => {
+        e.preventDefault();
+        setCountry(e.target.value.toLowerCase())
+    } 
+
     return (
         <main>
             <Form
                 onReset={reset}
+                country={country}
+                setCountry={setCountryValue}
             />
             <button
                 type="submit"
