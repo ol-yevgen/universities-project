@@ -1,4 +1,11 @@
+@import "../../App/styles/mixins.scss";
 main {
-    display: flex;
-    justify-content: center;
+    @include flex_container-center;
+    flex-direction: column;
+
+    width: 100%;
+}
+
+.more {
+    margin-bottom: 2rem;
 }
