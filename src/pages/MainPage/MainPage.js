@@ -1,10 +1,11 @@
-import { useState, useCallback, useEffect } from "react";
+import { useState, useCallback } from "react";
 import { useUniversityService } from "../../services/universityService";
 
 import { Form } from "../../components/Form/Form";
+import { Table } from "../../components/Table/Table";
 
 const MainPage = () => {
-    const [country, setCountry] = useState('ukraine');
+    const [country, setCountry] = useState('');
     const [universityList, setUniversitylist] = useState([]);
     const [offset, setOffset] = useState(10);
     const [universityEnded, setUniversityListEnded] = useState(false);
@@ -58,6 +59,9 @@ const MainPage = () => {
                 onReset={reset}
                 country={country}
                 setCountry={setCountryValue}
+            />
+            <Table
+                universityList={universityList}
             />
             <button
                 type="submit"

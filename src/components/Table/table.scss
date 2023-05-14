@@ -1,0 +1,34 @@
+@import '../../App/styles/mixins.scss';
+
+.university {
+    margin-top: 2rem;
+}
+
+table.university {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #ffcc00;
+  border-style: solid;
+  color: #000000;
+  margin: 2rem 0;
+}
+
+table.university td, table.university th {
+  border-width: 2px;
+  border-color: #ffcc00;
+  border-style: solid;
+  padding: 3px;
+  text-align: center;
+}
+
+table.university thead {
+  background-color: #ffcc00;
+}
+
+td > a:hover {
+    text-decoration: underline;
+    color: #ba3412;
+    transition: all .3s ease-out;
+}
