@@ -1,0 +1,29 @@
+@import "../../App/styles/mixins.scss";
+
+.form {
+    flex-direction: column;
+    width: 50%;
+
+    &__title {
+        display: block;
+    }
+
+    &__input {
+        width: 100%;
+        margin: 1rem 0;
+        padding: 0.7rem 1rem;
+    }
+
+    &__action {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+.btn {
+    padding: 0.5rem .7rem;
+
+    &:nth-last-child(1){
+            margin-left: 1rem;
+        }
+}

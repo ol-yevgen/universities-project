@@ -1,25 +1,19 @@
-@import '../fonts/fonts.scss';
+@import "../fonts/fonts.scss";
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html {
-    font-size: 62.5%;
-}
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 1.6rem;
 
     min-width: 320px;
     width: 100%;
     height: 100vh;
+    padding: 2rem;
 
     overflow: hidden;
 }
@@ -58,9 +52,8 @@ input::-webkit-inner-spin-button {
     margin: 0;
 }
 
-main {
-    position: relative;
-    padding: 3rem;
+#root {
+    width: 100%;
 }
 
 ::before,
@@ -68,4 +61,6 @@ main {
     letter-spacing: normal;
 }
 
-@import '../../pages/MainPage/mainPage.scss';
+@import "../../pages/MainPage/mainPage.scss";
+@import "../../components/Form/form.scss";
+@import "../../components/Spinner/spinner.scss";

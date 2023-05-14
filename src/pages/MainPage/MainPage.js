@@ -1,6 +1,10 @@
+import { Form } from "../../components/Form/Form";
+
 const MainPage = () => {
    return(
-       <div>MainPage</div>
+       <main>
+           <Form/>
+       </main>
    )
 }
 
