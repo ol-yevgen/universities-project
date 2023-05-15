@@ -1,6 +1,7 @@
 import { Fragment } from 'react';
 
 export const TableBody = ({ universityList }) => {
+
     const tableBody = universityList.map((item, index) => {
         return (
             <Fragment key={item.id}>
