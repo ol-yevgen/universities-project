@@ -23,6 +23,10 @@
 .btn {
     padding: 0.5rem .7rem;
 
+    &:hover {
+        cursor: pointer;
+    }
+
     &:nth-last-child(1){
             margin-left: 1rem;
         }
